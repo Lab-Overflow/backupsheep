@@ -1,0 +1,75 @@
+# Core Python packages
+setuptools==82.0.1
+pip==26.1.1
+
+# Django and REST Framework
+Django==6.0.5
+djangorestframework==3.17.1
+djangorestframework-datatables==0.7.2
+django-filter==25.2
+django-user-agents==0.4.0
+django-model-utils==5.0.0
+
+# Database and Data Processing
+psycopg2-binary==2.9.12
+mysql-connector-python==9.7.0
+sqlparse==0.5.5
+tzdata==2026.2
+
+# Task Queue & Celery
+celery[redis]==5.6.3
+django-celery-beat==2.9.0
+django-celery-results==2.6.0
+
+# Cloud Storage & Services
+## AWS
+boto3==1.43.13
+
+## Google Cloud
+google-cloud-storage==3.10.1
+google-auth==2.53.0
+google-auth-oauthlib==1.4.0
+google-api-python-client==2.196.0
+
+## Azure
+azure-storage-blob==12.29.0
+azure-identity==1.25.3
+
+## Other Cloud Services
+dropbox==12.0.2
+pcloud==2.0.1
+ibm-cos-sdk==2.16.2
+oss2==2.19.1
+cos-python-sdk-v5==1.9.43
+oci==2.175.0
+ovh==1.2.0
+
+# File Transfer & Network
+paramiko==5.0.0
+ftputil==5.2.0
+requests==2.34.2
+requests-toolbelt==1.0.0
+gunicorn==26.0.0
+whitenoise==6.12.0
+ipaddress==1.0.23
+
+# Security & Authentication
+python-dotenv==1.2.2
+# Capped <47 by oci 2.175.0 (Oracle Cloud SDK); 46.0.7 is the newest it allows.
+cryptography==46.0.7
+sentry-sdk==2.60.0
+firebase-admin==7.4.0
+
+# Utilities & Helpers
+humanfriendly==10.0
+humanize==4.15.0
+shortuuid==1.0.13
+phonenumbers==9.0.30
+twilio==9.10.9
+Pillow==12.2.0
+beautifulsoup4==4.14.3
+slack-sdk==3.42.0
+fake-useragent==2.2.0
+arrow==1.4.0
+croniter==6.2.2
+python-slugify==8.0.4

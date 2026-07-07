@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+@config '../tailwind.config.js';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+.mdl-shadow--2dp {
+    box-shadow: none;
+}
+.select2-container .select2-selection--single {
+    height: 38px;
+}
+.select2-container--classic .select2-selection--single .select2-selection__clear {
+    height: 34px;
+    padding-right: 8px;
+}
+.select2-container--classic .select2-selection--single .select2-selection__rendered {
+    line-height: 34px;
+}
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
+    height: 36px;
+}
+.select2-container .select2-selection--single .select2-selection__clear {
+    height: 34px;
+    padding-right: 8px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    line-height: 34px;
+}
+.select2-container .select2-selection--single .select2-selection__arrow {
+    height: 36px;
+}
+
+  .lg\:w-128 {
+    width: 36rem;
+  }
